@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99, 223, 186);;
+}
+
+h1{
+    font-family: 'League Script', cursive;
+    font-size:40px;
+    font-weight: bolder;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(16,2fr);
+    grid-template-rows:repeat(16,1fr);
+    margin:50px;
+    height:500px;
+    width:500px;
+    background-color: white;
+    border: green solid 7px;
+}
+
+.cell {
+    border: black solid 1px;
+    background-color: rgba(255, 255, 255,1);
+}
+
+button{
+    display: inline-block;
+    text-align: left;
+    padding: 15px 25px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 9px green;
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+}    
+
+.rgbBtn{
+    color:beige;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+.grayBtn{
+    background-image:linear-gradient(to bottom right,white,black);
+    box-shadow: 0 9px gray;
+}
+
+.blueBtn{
+    background-image: linear-gradient(to top left,rgb(95, 95, 248),blue);
+    box-shadow: 0 9px blue;
+}
